@@ -1,0 +1,143 @@
+/* Global Layout Set-up */
+* {
+  @include border_box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /*text-align: center;*/
+  font-family: 'Open Sans', sans-serif;
+  color: $sage;
+  background: $charcoal;
+}
+/* #toggle_class keeps margin between nav and section flush
+   when nav is toggled on and off with sticky header nav */
+
+#toggle_class{
+  content: "";
+  height: 0px;
+  display: none;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: $sand;
+  &:hover{
+    color: lighten($red, 30%);
+  }
+  &:focus{
+    color: $red;
+  }
+}
+
+
+
+/* Section Styles */
+
+
+
+.name{
+  font-weight: 300;
+}
+
+
+.title{
+  color: $cherry-black;
+  @include bp(tablet){
+  font-size: $font-size__bannerTitle;
+}
+}
+
+.subTitle{
+  color: $cabernet-red;
+  @include bp(tablet){
+  font-size: $font-size__subTitle;
+}
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #781125;
+  clear: both;
+  @include bp(tablet){
+    .card{
+      margin: 40px auto;
+      padding: 20px 40px 40px;
+      width: 80%;
+      /*max-width: 1000px;*/
+    }
+  }
+  @include bp(mobile_small){
+    margin: em(20px) em(0px);
+  }
+}
+.card:hover {
+  border-color: #96731A;
+}
+
+
+.photo{
+  display: block;
+  max-width: 100%;
+  height: 220px;
+  margin: 0 auto;
+  border: 5px solid #828a83;
+  @include bp(mobile_small){
+    height: 200px;
+  }
+
+}
+
+.information{
+  width: 100%;
+  text-align: center;
+}
+
+.heading{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: $sand;
+  margin-top: em(30px);
+
+}
+
+.headingContrast{
+  color: #ED3E0F;
+}
+
+.centerHeading{
+  @include flex;
+  @include flex_justify_center;
+  @include bp(tablet){
+    @include flex_justify_start;
+    margin-left:10%;
+  }
+  @include bp(large_screen){
+    margin-left: 15%;
+  }
+
+
+}
+
+.flex{
+  @include flex;
+  @include flex_column;
+  @include flex_align_items--center;
+
+  @include bp(tablet){
+    @include flex;
+    @include flex_row;
+    @include flex_justify_space_around;
+    /*max-width: 1200px;*/
+    -ms-flex-pack: distribute;
+  }
+}
+
+.flex2{
+  margin-bottom: em(100px);
+}

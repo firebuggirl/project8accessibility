@@ -1,0 +1,98 @@
+#toggle{
+  @include mobile_right_toggle;
+  /*border-radius: 50%;*/
+  margin-right: em(10px);
+  /*border: 5px solid $red;*/
+  /*display: none;*/
+/*  background-color: $white;*/
+  @media #{$mobile_small}{
+    margin-right: em(1.5px);
+    width: em(42px);
+    height: em(42px);
+  }
+}
+
+
+.main-nav {
+  @include fixed_header2;
+  min-height:50px;
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+
+  /*text-align: center;*/
+}
+
+.nav {
+  @include flex;
+  @include flex_column;
+  @include flex_justify_center;
+  @include flex_align_center;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  @include bp(tablet){
+    @include flex_justify_space_around;
+    @include flex_row;
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+}
+
+.nav .name {
+  /*display: block;*/
+  margin: auto;
+  text-align: center;
+  /*color: $white;*/
+  letter-spacing: 5px;
+  font-weight: $font-weight--bold;
+  @include bp(tablet){
+    margin-right: 39%;
+    display: block;
+    font-size: $font_size__h4;
+    letter-spacing: em(2px);
+
+  }
+  @include bp(fullscreen){
+    margin-right: 60%;
+  }
+  @include bp(large_screen){
+    margin-right: 63%;
+  }
+}
+
+.nav li {
+  padding: 3px 0px 0px 5px;
+  font-weight: $font-weight--bold;
+  @include bp(tablet){
+    padding: 5px 10px 10px 10px;
+    font-size: $font_size__h4;
+  }
+}
+
+.nav a {
+  transition: all .5s;
+  &:hover{
+    color: lighten($red, 30%);
+  }
+  &:focus{
+    color: $red;
+  }
+}
+
+
+
+header {
+  text-align: center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 120px;
+  height: 350px;
+  @include bp(tablet){
+    padding-top: 60px;
+    min-height: 470px;
+
+  }
+}

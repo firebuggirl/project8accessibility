@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 "Accessible web sites allow anyone and everyone to use the web, regardless of physical or hardware differences. They also, generally, make sites faster to download and easier to parse for software like search engines. More accessible web sites are also starting to be given higher PageRank scores for web searches.\
+\
+For this project you will modify the website files provided for the rock band \'93Accessible Frog" to improve the site's accessibility for users.\
+\
+Before you start\
+\
+To prepare for this project you'll need to make sure you complete and understand these steps.\
+\
+ 4 steps\
+Download the project files.\
+Install the Accessibility Developer Tools Chrome Extension.\
+You need to use the Chrome web browser.\
+To use the extension, load the page you wish to check; open the developer tools (right click on the webpage and select Inspect); select the Audits tab; select the Accessibility audit; click Run.\
+Install Fangs Firefox Extension for screen reader emulation.\
+You will need to have Firefox installed to use this. Have the page you want to review loaded and right click.\
+In the right click menu select \'93View Fangs\'94. This will launch a new window that shows you how a screen reader will interpret the page.\
+Links to these Extensions are found in the Project Resources section.\
+Project Instructions\
+\
+To complete this project, follow the instructions below. If you get stuck, ask a question in the community.\
+\
+ 10 steps\
+\
+NOTE: To get an "Exceeds Expectations" grade for this project, you'll need to "exceed" on every requirement that has an "Exceeds Expectations" option.\
+\
+Language\
+Specify a language with the lang attribute on the <html> element on each .html page.\
+Design\
+Ensure that the foreground text and background colors of your site have sufficient contrast. This will make your site more readable for everyone. Contrast Ratio is one tool for checking the contrast of your colors for both standard vision and color deficient user.\
+Document Structure\
+Ensure heading elements i.e. <h1> are used to provide hierarchical structure to page content.\
+Specifically look for the <p> tags with the class "heading" these should be changed to help assist screen readers.\
+Images\
+Text in banner area is part of the image and will not be picked up by screen readers. Use the background image without text (concert02_no_text.jpg) and add text to the HTML to roughly match the layout.\
+Add alt tags to images.\
+Make sure that decorative images have an empty alt attribute i.e alt="".\
+Links\
+Ensure links are visually distinct.\
+Add hover state to links.\
+Ensure the image link icons in the footer have accompanying text describing the link. However we don\'92t want to see this text on the page. Think about using alt text for the image or using css styling to hide text describing the image link.\
+Table\
+Create a table for the tour dates information using the <td> element for table data cells and the <th> element for table header cells.\
+Ensure your table has a scope and caption element.\
+Form\
+Ensure form elements have styled focus states using the :focus pseudo class.\
+Add associated labels for form controls.\
+Make sure all labels have a \'91for\'92 value. Matching for and id values associate the label with the appropriate form control.\
+Group form elements with a fieldset.\
+Add a legend to describe the grouping.\
+Ensure the select field options are in alphabetical order.\
+Make sure you can select options in the drop-down menu by typing from the keyboard.\
+Checking your code:\
+Check your code using the Chrome Accessibility extension and the Fangs extension for Firefox.\
+You can also copy and paste your HTML into the Accessibility Validator (see the Project Resources section for link).\
+You will also need to check your code against the Accessibility Checklist (see the Project Resources section for link).\
+Make sure to check your code is valid by running it through an HTML and CSS validator.\
+Links to the validators can be found in the Project Resources. This will help you spot any errors that might be in your code.\
+There are a few exceptions that you don\'92t need to fix:\
+Don\'92t worry about any warnings, we just need you to check any errors that might be there.\
+If CSS validator flags use of calc, vendor prefixes or pseudo-elements/pseudo-classes these errors should be ignored.\
+If HTML validator flags use of pipe (\'91|\'92) in Google font links/URLs this error can also be ignored.\
+\
+NOTE: A good practice is to check your project for cross browser compatibility. Making sure that it looks and functions correctly in multiple (at least three) browsers is an important part of being a top-notch developer. If you want, leave a comment to the project reviewer about which browser(s) the project was checked to ensure they are seeing things as you have designed them.\
+\
+Some browser options:\
+\
+Google Chrome\
+Mozilla Firefox\
+Internet Explorer/Edge\
+Safari\
+Extra Credit\
+\
+To get an "exceeds" rating, you can expand on the project in the following ways:\
+\
+ 2 steps\
+Add in aria landmark roles attributes to sections of the page.\
+You will need to add in 3 per page, using the most appropriate role value for the content of the container.\
+For example, the footer section would look like:<footer role="contentinfo">\
+We have not covered Aria Landmark roles. However this is a great chance to flex your Google searching skills.\
+We have included links in the Project Resources to get you started.\
+Use aria-describedby to add a description of what the submit form button does when clicked and to provide more information about parts of the form. For example:\
+    <label for="password">Choose a password</label>\
+    <input type="password" id="password" aria-describedby="hint" ...>\
+\
+    <p id="hint">Your password must be at least 10 characters in length. It must contain a mixture of upper and lower case letters, numbers and punctuation marks.</p>\
+\
+\
+Download files\
+}
