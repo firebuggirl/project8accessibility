@@ -45,14 +45,14 @@ a {
 
 
 .title{
-  color: $cherry-black;
+  color: $lemon;
   @include bp(tablet){
   font-size: $font-size__bannerTitle;
 }
 }
 
 .subTitle{
-  color: $cabernet-red;
+  color: #ED3E0F;
   @include bp(tablet){
   font-size: $font-size__subTitle;
 }
@@ -62,7 +62,7 @@ a {
   margin: 30px;
   padding: 20px 40px 40px;
   text-align: left;
-  border-top: 4px solid #781125;
+  border-top: 4px solid #orange-red;
   clear: both;
   @include bp(tablet){
     .card{
@@ -107,7 +107,7 @@ a {
 }
 
 .headingContrast{
-  color: #ED3E0F;
+  color: $orange-red;
 }
 
 .centerHeading{
