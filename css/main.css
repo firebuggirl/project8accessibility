@@ -664,41 +664,31 @@ input[type="text"], input[type="email"], select, textarea, button {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  /*margin-left: 5%;*/ }
+  box-sizing: border-box; }
 
 input::-moz-placeholder {
   text-align: right;
-  /*font-style: italic;*/
   font-weight: 700;
   color: #8d2509; }
 
 ::-webkit-input-placeholder {
-  /*font-style: italic;*/
   font-weight: 700;
   color: #8d2509; }
 
 input[type="radio"] {
   -webkit-appearance: none;
-  -moz-appearance: none;
+  /*  -moz-appearance: none;*/
   width: 1.5625em;
   height: 1.5625em;
   border: 5px solid #FCAD0D;
   background-color: #C9D7D2;
   border-radius: 50%;
-  outline: none;
-  /*box-shadow: 0 0 15px 0px $red inset;
-  -moz-box-shadow: 0 0 5px 5px $red inset;
-  -webkit-box-shadow: 0 0 5px 5px $red inset;*/ }
+  outline: none; }
   @media (min-width: 768px) {
     input[type="radio"] {
       width: 1.25em;
       height: 1.25em; } }
 
-/*input[type='radio']:active{
-  color: $mustard;
-  background-color: $red;
-}*/
 input[type=radio]:checked {
   border: 5px solid #ED3E0F; }
 
