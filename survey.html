@@ -41,17 +41,17 @@
               <p>Who is your favorite band member:</p>
               <div id="favMember">
               <label for="John">John:</label>
-              <input id="John" type="radio" name="bandmember" value="John" tabindex="1">
+              <input id="John" type="radio" name="bandmember" value="John">
               <label for="Hazzard">Hazzard:</label>
-              <input id="Hazzard" type="radio" name="bandmember" value="Hazzard" tabindex="2">
+              <input id="Hazzard" type="radio" name="bandmember" value="Hazzard">
               <label for="Bob">Bob:</label>
-              <input id="Bob" type="radio" name="bandmember" value="Bob" tabindex="3">
+              <input id="Bob" type="radio" name="bandmember" value="Bob">
               <label for="Sally">Sally:</label>
-              <input id="Sally" type="radio" name="bandmember" value="Sally" tabindex="4">
+              <input id="Sally" type="radio" name="bandmember" value="Sally">
             </div>
               <p>What is your favorite album:</p>
               <label class="hideLabel" for="albums"><abbr title="favAlbum">F</abbr>avorite Album:</label>
-              <select tabindex="5" id="albums" name="albums" accesskey="f">
+              <select id="albums" name="albums" accesskey="a">
 
                 <option value="1">A Day Of Old</option>
                 <option value="2">Diamond Fireworks</option>
@@ -69,7 +69,7 @@
 
               <p>What is your favorite song:</p>
               <label class="hideLabel" for="favSong">Favorite <abbr title="favSong">S</abbr>ong:</label>
-              <textarea id="favSong" tabindex="17" name="favsong" placeholder="What is your favorite song?" accesskey="s" spellcheck="true"></textarea>
+              <textarea id="favSong" name="favsong" placeholder="What is your favorite song?" accesskey="f" spellcheck="true"></textarea>
             </fieldset>
             </form>
           </div>
@@ -86,10 +86,10 @@
                 <input  type="hidden" name="secret" value="1n0skWt8fmZa9">
                 <fieldset class="form" id="newsletter">
                 <legend>Sign Up For Our Newsletter</legend>
-                  <p><label for="name"><abbr title="name">N</abbr>ame:</label> <input autocomplete="name" tabindex="18" id="name" type ="text" name="name" placeholder="name" accesskey="n" required></p>
-                  <p><label for="email"><abbr title="email">E</abbr>mail:</label><input autocomplete="email" tabindex="19" id="email" type ="email" name="email" placeholder="email" accesskey="e" required></p>
-                  <p><label for="validateEmail"><abbr title="validateEmail">R</abbr>etype Email:</label><input autocomplete="email" tabindex="20" id="validateEmail" type ="email" name="validateemail" placeholder="validate email" accesskey="r" required></p>
-                  <button tabindex="21" type="submit" aria-describedby="submit">Sign Up</button>
+                  <p><label for="name"><abbr title="name">N</abbr>ame:</label> <input autocomplete="name"  id="name" type ="text" name="name" placeholder="name" accesskey="n" required></p>
+                  <p><label for="email"><abbr title="email">E</abbr>mail:</label><input autocomplete="email"  id="email" type ="email" name="email" placeholder="email" accesskey="e" required></p>
+                  <p><label for="validateEmail"><abbr title="validateEmail">R</abbr>etype Email:</label><input autocomplete="email"  id="validateEmail" type ="email" name="validateemail" placeholder="validate email" accesskey="r" required></p>
+                  <button  type="submit" aria-describedby="submit" >Sign Up</button>
                   <p id="submit">Thank you for completing the Accessible Frog survey and for providing the band with your contact information. We will be sure to be in touch! Clicking here will ensure that you have signed up for our newsletter.</p>
                 </fieldset>
               </form>
