@@ -4,7 +4,13 @@
   /*width: 60%;*/
   /*padding: 10px;*/
 }
-
+p{
+  text-align: center;
+  @include bp(tablet){
+    text-align: left;
+    margin-left: em(0px);
+  }
+}
 form {
   margin: 0 auto;
   text-align: left;
@@ -12,6 +18,16 @@ form {
 }
 legend{
   font-size: $font-size__h5;
+  margin-left: em(40px);
+  @include bp(mobile_small){
+    margin-left: em(20px);
+  }
+  @include bp(iPhone6){
+    margin-left: em(38px);
+  }
+  @include bp(tablet){
+    margin-left: em(0px);
+  }
 }
 .container{
   text-align: center;

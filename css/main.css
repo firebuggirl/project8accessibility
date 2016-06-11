@@ -625,13 +625,30 @@ header {
   /*width: 60%;*/
   /*padding: 10px;*/ }
 
+p {
+  text-align: center; }
+  @media (min-width: 768px) {
+    p {
+      text-align: left;
+      margin-left: 0em; } }
+
 form {
   margin: 0 auto;
   text-align: left;
   display: inline-block; }
 
 legend {
-  font-size: 22px; }
+  font-size: 22px;
+  margin-left: 2.5em; }
+  @media (min-width: 320px) {
+    legend {
+      margin-left: 1.25em; } }
+  @media (min-width: 375px) {
+    legend {
+      margin-left: 2.375em; } }
+  @media (min-width: 768px) {
+    legend {
+      margin-left: 0em; } }
 
 .container {
   text-align: center;

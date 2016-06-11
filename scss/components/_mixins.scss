@@ -35,6 +35,9 @@
   @else if $point == mobile_xLarge{
     @media (min-width: 435px) { @content;}
   }
+  @else if $point == iPhone6 {
+    @media (min-width: 375px) { @content; }
+    }
   @else if $point == mobile {
     @media (min-width: 360px) { @content; }
     }
