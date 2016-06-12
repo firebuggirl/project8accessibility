@@ -4,17 +4,46 @@
   /*width: 60%;*/
   /*padding: 10px;*/
 }
-p{
+
+#concert{
+  @include bp(tablet){
+  height: em(400px);
+}
+}
+#band{
+  @include bp(tablet){
+    height: 400px;
+
+    margin-top:em(70px);
+  }
+}
+
+p > label{
   text-align: center;
   @include bp(tablet){
     text-align: left;
     margin-left: em(0px);
   }
 }
+.centerHeading{
+  @include flex;
+  @include flex_justify_center;
+  @include bp(tablet){
+    @include flex;
+    @include flex_justify_center;
+  }
+  @include bp(large_screen){
+    @include flex_justify_start;
+    margin-left: 15%;
+  }
+}
 form {
   margin: 0 auto;
   text-align: left;
-  display: inline-block;
+  /*display: inline-block;*/
+  @include bp(tablet){
+  width: 80%;
+}
 }
 legend{
  text-indent: -9999px;
@@ -26,12 +55,26 @@ legend{
 }
 
 .container{
+  width: 80%;
   text-align: center;
   margin-top: em(30px);
 }
 .newsletter{
   text-align: left;
 
+}
+.flexColumn{
+  @include flex;
+  @include flex_column;
+  @include flex_align_items--center;
+
+  @include bp(fullscreen){
+    @include flex;
+    @include flex_row;
+    @include flex_justify_space_around;
+    /*max-width: 1200px;*/
+    -ms-flex-pack: distribute;
+  }
 }
 
 fieldset{
@@ -124,12 +167,9 @@ input[type=radio]:checked {
 }
 
 button{
-  width: 40%;
-  margin-left: 25%;
-  @include bp(tablet){
-    width: 90%;
-    margin-left: 5%;
-  }
+  width: 100%;
+  margin-top: 4%;
+
 }
 
 #favMember {
@@ -153,11 +193,4 @@ button{
 select {
   color: #a8423d;
   height: 52px;
-}
-
-/* Styles for larger screens */
-@media screen and (min-width: 840px) {
-  .photo{
-    width: 40%;
-  }
 }

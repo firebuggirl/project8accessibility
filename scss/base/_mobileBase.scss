@@ -2,7 +2,10 @@
 * {
   @include border_box;
 }
+img{
+  max-width: 100%;
 
+}
 body {
   margin: 0;
   padding: 0;
@@ -80,15 +83,31 @@ a {
   border-color: #96731A;
 }
 
+#album{
+  @include bp(tablet){
+    height: em(300px);
+  }
+  @include bp(fullscreen){
+    height: em(400px);
+  }
+}
 
+#leadSinger{
+  @include bp(tablet){
+    height: em(250px);
+  }
+  @include bp(fullscreen){
+    height: em(280px);
+  }
+}
 .photo{
-  display: block;
-  max-width: 100%;
-  height: 220px;
+  /*display: block;*/
+  /*max-width: 100%;*/
+  /*height: 220px;*/
   margin: 0 auto;
   border: 5px solid #828a83;
   @include bp(mobile_small){
-    height: 200px;
+  /*  height: 200px;*/
   }
 
 }
@@ -103,26 +122,26 @@ a {
   text-transform: uppercase;
   color: $sand;
   margin-top: em(30px);
+  @include bp(tablet){
+    margin-top: -1em;
+  }
+  @include bp(fullscreen){
+    margin-top: -2em;
+  }
 
+}
+
+.headingSurvey{
+  font-size: 1.5em;
+  text-transform: uppercase;
+  color: $sand;
+  margin-top: em(30px);
 }
 
 .headingContrast{
   color: $orange-red;
 }
 
-.centerHeading{
-  @include flex;
-  @include flex_justify_center;
-  @include bp(tablet){
-    @include flex_justify_start;
-    margin-left:10%;
-  }
-  @include bp(large_screen){
-    margin-left: 15%;
-  }
-
-
-}
 
 .flex{
   @include flex;
