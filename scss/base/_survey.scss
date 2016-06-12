@@ -17,18 +17,14 @@ form {
   display: inline-block;
 }
 legend{
-  font-size: $font-size__h5;
-  margin-left: em(40px);
-  @include bp(mobile_small){
-    margin-left: em(20px);
-  }
-  @include bp(iPhone6){
-    margin-left: em(38px);
-  }
-  @include bp(tablet){
-    margin-left: em(0px);
-  }
+ text-indent: -9999px;
+
 }
+#replacementLabel{
+  font-size: $font-size__h5;
+  margin-top: em(-20px);
+}
+
 .container{
   text-align: center;
   margin-top: em(30px);

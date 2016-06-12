@@ -638,17 +638,11 @@ form {
   display: inline-block; }
 
 legend {
+  text-indent: -9999px; }
+
+#replacementLabel {
   font-size: 22px;
-  margin-left: 2.5em; }
-  @media (min-width: 320px) {
-    legend {
-      margin-left: 1.25em; } }
-  @media (min-width: 375px) {
-    legend {
-      margin-left: 2.375em; } }
-  @media (min-width: 768px) {
-    legend {
-      margin-left: 0em; } }
+  margin-top: -1.25em; }
 
 .container {
   text-align: center;
