@@ -672,11 +672,7 @@ form {
       width: 80%; } }
 
 legend {
-  text-indent: -9999px; }
-
-#replacementLabel {
-  font-size: 22px;
-  margin-top: -1.25em; }
+  font-size: 22px; }
 
 .container {
   width: 80%;

@@ -40,14 +40,9 @@ form {
   width: 80%;
 }
 }
-legend{
- text-indent: -9999px;
-
-}
-#replacementLabel{
-  font-size: $font-size__h5;
-  margin-top: em(-20px);
-}
+ legend{
+   font-size: $font-size__h5;
+ }
 
 .container{
   width: 80%;
