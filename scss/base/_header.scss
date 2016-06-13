@@ -1,10 +1,6 @@
 #toggle{
   @include mobile_right_toggle;
-  /*border-radius: 50%;*/
   margin-right: em(10px);
-  /*border: 5px solid $red;*/
-  /*display: none;*/
-/*  background-color: $white;*/
   @media #{$mobile_small}{
     margin-right: em(1.5px);
     width: em(42px);
@@ -18,8 +14,6 @@
   min-height:50px;
   width: 100%;
   background: rgba(45, 43, 48, 0.8);
-
-  /*text-align: center;*/
 }
 
 .nav {
@@ -41,10 +35,8 @@
 }
 
 .nav .name {
-  /*display: block;*/
   margin: auto;
   text-align: center;
-  /*color: $white;*/
   letter-spacing: 5px;
   font-weight: $font-weight--bold;
   @include bp(tablet){

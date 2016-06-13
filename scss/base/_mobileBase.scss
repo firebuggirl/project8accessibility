@@ -9,7 +9,6 @@ img{
 body {
   margin: 0;
   padding: 0;
-  /*text-align: center;*/
   font-family: 'Open Sans', sans-serif;
   color: $sage;
   background: $charcoal;
@@ -60,6 +59,18 @@ a {
   font-size: $font-size__subTitle;
 }
 }
+main {
+  @include bp(tablet){
+    padding-top: 20px;
+  }
+}
+
+  main p {
+    @include bp(tablet){
+    line-height: 1.6em;
+  }
+}
+
 
 .card {
   margin: 30px;
@@ -72,7 +83,6 @@ a {
       margin: 40px auto;
       padding: 20px 40px 40px;
       width: 80%;
-      /*max-width: 1000px;*/
     }
   }
   @include bp(mobile_small){
@@ -86,6 +96,7 @@ a {
 #album{
   @include bp(tablet){
     height: em(300px);
+
   }
   @include bp(fullscreen){
     height: em(400px);
@@ -101,13 +112,10 @@ a {
   }
 }
 .photo{
-  /*display: block;*/
-  /*max-width: 100%;*/
-  /*height: 220px;*/
   margin: 0 auto;
   border: 5px solid #828a83;
-  @include bp(mobile_small){
-  /*  height: 200px;*/
+  @include bp(tablet){
+    margin: em(20px) em(30px);
   }
 
 }
@@ -152,7 +160,6 @@ a {
     @include flex;
     @include flex_row;
     @include flex_justify_space_around;
-    /*max-width: 1200px;*/
     -ms-flex-pack: distribute;
   }
 }
