@@ -7,7 +7,10 @@
     height: em(42px);
   }
 }
-
+/* Wrapped  picToggle image in a link tag for accessibility and for increased functionality, then hid anchor text to get rid of accessibility warning on Chrome accessibility audit*/
+#navTextIndent{
+  margin-left: em(-9999px);
+}
 
 .main-nav {
   @include fixed_header2;

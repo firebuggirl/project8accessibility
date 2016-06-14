@@ -553,6 +553,10 @@ a {
       width: 2.625em;
       height: 2.625em; } }
 
+/* Wrapped  picToggle image in a link tag for accessibility and for increased functionality, then hid anchor text to get rid of accessibility warning on Chrome accessibility audit*/
+#navTextIndent {
+  margin-left: -624.9375em; }
+
 .main-nav {
   width: 100%;
   min-height: 30px;

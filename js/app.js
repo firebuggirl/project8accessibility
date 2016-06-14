@@ -1412,8 +1412,16 @@ window.Modernizr = (function( window, document, undefined ) {
 
 /* Hide toggle on tablets and larger screens as page loads*/
 $(document).ready(function(){
-  if(window.innerWidth >= 750){
+  if(window.innerWidth >= 551){
   	$('#toggle').hide();
+     $('.main-nav ul li').show();
+  }
+});
+
+$(document).ready(function(){
+  if(window.innerWidth <= 750){
+  	$('#toggle').show();
+    $('.main-nav ul li').hide();
   }
 });
 
@@ -1440,9 +1448,10 @@ $(window).resize(function(){
 });
 
 $(window).resize(function(){
-	if(window.innerWidth < 768) {
+	if(window.innerWidth < 750) {
     $('#toggle_class').show();
 			$('#toggle').show();
+      	$(".main-nav ul li").hide();
 	}
 });
 
