@@ -794,6 +794,9 @@ select {
   color: #a8423d;
   height: 52px; }
 
+#submit {
+  text-indent: -9999px; }
+
 /* Tour page styles */
 pre {
   font-family: 'Open Sans', sans-serif; }
@@ -874,9 +877,6 @@ thead {
 @media (min-width: 1024px) {
   tbody {
     margin-top: 1.25em; } }
-
-#submit {
-  display: none; }
 
 /* Footer styles */
 footer {

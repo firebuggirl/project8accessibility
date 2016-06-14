@@ -9,11 +9,12 @@
   </head>
 
   <body>
+
     <nav class="main-nav" id="toggle-view" role="navigation">
-    <img id="toggle" src="img/picToggle.svg" alt="Toggle Pic"/>
-      <ul class="nav" id="panel" role="menu">
+      <img id="toggle" src="img/picToggle.svg" alt=""/>
+     <ul class="nav" id="panel" role="menu">
         <li class="name"><a href="index.html" role="menuitem">Accessible Frog</a></li>
-        <li><a href="tour.html" role="menuitem">Tour</a></li>
+        <li><a href="tour.html" role="menuitem" >Tour</a></li>
         <li><a href="survey.html" role="menuitem">Survey</a></li>
       </ul>
     </nav>
@@ -31,7 +32,7 @@
       <div class="card">
         <div class="flexColumn">
 
-          <img class="photo" id="concert" src= "img/concert01.jpg" alt="concert">
+          <img class="photo" id="concert" src= "img/concert01.jpg" alt="Accessible Frog Live - Coachella 2016">
           <div class="container">
             <form class="survey" action="survey.html" method="POST" onsubmit="return checkForm(this);">
                <input type="hidden" name="secret" value="1n0skWt8fmZa9">
@@ -39,7 +40,7 @@
               <legend>Band Favorites</legend>
 
               <p>Who is your favorite band member:</p>
-              <div id="favMember">
+              <span id="favMember">
               <label for="John">John:</label>
               <input id="John" type="radio" name="bandmember" value="John">
               <label for="Hazzard">Hazzard:</label>
@@ -48,7 +49,7 @@
               <input id="Bob" type="radio" name="bandmember" value="Bob">
               <label for="Sally">Sally:</label>
               <input id="Sally" type="radio" name="bandmember" value="Sally">
-            </div>
+            </span>
               <p>What is your favorite album:</p>
               <label class="hideLabel" for="albums"><abbr title="favAlbum">F</abbr>avorite Album:</label>
               <select id="albums" name="albums" accesskey="a">
@@ -69,7 +70,7 @@
 
               <p>What is your favorite song:</p>
               <label class="hideLabel" for="favSong">Favorite <abbr title="favSong">S</abbr>ong:</label>
-              <textarea id="favSong" name="favsong" placeholder="What is your favorite song?" accesskey="f" spellcheck="true"></textarea>
+              <textarea id="favSong" name="favsong" placeholder="Favorite song" accesskey="f" spellcheck="true"></textarea>
             </fieldset>
             </form>
           </div>
@@ -80,7 +81,7 @@
     </div>
       <div class="card">
         <div class="flexColumn flex2">
-          <img class="photo" id="band" src= "img/the_band.jpg" alt="Accessible Frog">
+          <img class="photo" id="band" src= "img/the_band.jpg" alt="Accessible Frog Live at The Echo - Los Angeles">
             <div class="container">
               <form class="newsletter" action="survey.html" method="POST" onsubmit="return checkForm(this);">
                 <input  type="hidden" name="secret" value="1n0skWt8fmZa9">
@@ -90,7 +91,8 @@
                   <p><label for="email"><abbr title="email">E</abbr>mail:</label><input autocomplete="email"  id="email" type ="email" name="email" placeholder="email" accesskey="e" required></p>
                   <p><label for="validateEmail"><abbr title="validateEmail">R</abbr>etype Email:</label><input autocomplete="email"  id="validateEmail" type ="email" name="validateemail" placeholder="validate email" accesskey="r" required></p>
                   <button  type="submit" aria-describedby="submit" >Sign Up</button>
-                  <p id="submit">Thank you for completing the Accessible Frog survey and for providing the band with your contact information. We will be sure to be in touch! Clicking here will ensure that you have signed up for our newsletter.</p>
+                  <p id="submit">Thank you for completing the Accessible Frog survey and for providing the band with your contact information.
+                    We will be sure to be in touch! Clicking here will ensure that you have signed up for our newsletter.</p>
                 </fieldset>
               </form>
             </div>
